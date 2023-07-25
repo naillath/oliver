@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Knewave&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-principal: 'Knewave', cursive;
+    --font-secundaria: 'Caveat', cursive;
+}
+
+body {
+    background-color: #b6c6d8;   
+}
+
+.container {
+    background: url("/assets/img/background.jpg") no-repeat #b6c6d8;
+    background-size: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    gap: 50px;
+    font-family: var(--font-principal);
+    font-size: 1.88rem;
+    text-shadow: 0.1em 0.1em #333;
+}
+
+.navigation > a {
+    text-decoration: none;
+    color: #36bcff;
+}
+
+.navigation > a:hover {
+    color: #ffffff;
+    transition: 0.7s;
+}
+
+.nameBaby {
+    color: #36bcff;
+}
+
+.conteudo {
+    display: flex;
+    width: 90%;
+    padding: 5% 5%;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.conteudo__texto {
+    color: #ffffff;
+    font-family: var(--font-secundaria);
+    text-shadow: 0.1em 0.1em #333;
+    width: 35%;
+}
+
+.conteudo__texto > h1, h2 {
+    font-size: 4rem;
+}
+
+.conteudo__texto > h1 {
+    text-align: center;
+}
+
+.conteudo__texto > h2 {
+    text-align: end;
+    padding-right: 10%;
+}
+
+.conteudo__texto > p {
+    font-size: 2.5rem;
+}
+
+.fotoOliver {
+    border: 5px double #ffffff;
+    border-radius: 50%;
+}
+
+.fotoOliver:hover {
+    scale: 1.1;
+    transition: 0.7s;
+}
+
+.about {
+    border: 1px solid rgba(241, 240, 240, 0.705);
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    padding: 2%;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    background: rgba(241, 240, 240, 0.705);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+}
+
+.about__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about > div> h1 {
+    text-align: start;
+    padding-bottom: 3%;
+    font-size: 4rem;
+    color: #000000;
+    text-shadow: 0.1em 0.1em #36bcff;
+}
+
+.about > p {
+    padding-bottom: 2%;
+    font-size: 2rem;
+}
+
+.imgabout {
+    border: 5px double #36bcff;
+    border-radius: 50%;
+}
+
+.imgabout:hover {
+    scale: 1.1;
+    transition: 0.7s;
+}
+
+.gallerymes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 5% 5%;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.mespredef {
+    border: 1px solid rgba(241, 240, 240, 0.705);
+    border-radius: 10px;
+    background: rgba(241, 240, 240, 0.705);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    width: 60%;
+    height: 300px;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 3%;
+    gap: 10px;
+}
+
+.mes__texto {
+    width: 50%;
+    padding-bottom: 3%;
+    align-self: center;
+}
+
+.mes__texto > h1 {
+    color: #9ad8f7;
+    font-family: var(--font-secundaria);
+    text-shadow: 0.1em 0.1em #333;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.mes__texto > p {
+    color: #000000;
+    font-family: var(--font-secundaria);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.mes__img__capa {
+    border: 4px dashed #36bcff;
+    border-radius: 15px;
+}
+
+.mes__img__capa:hover {
+    scale: 1.1;
+    transition: 0.7s;
+}
+
+.rodape {
+    text-align: center;
+    font-family: var(--font-principal);
+    color: #ffffff;
+    font-size: 1.25rem;
+    text-shadow: 0.1em 0.1em #333;
+    padding-bottom: 2%;
+}
+
+.naillath > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+@media (max-width: 1250px) {
+
+    .conteudo {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        gap: 30px;
+    }
+
+    .conteudo__texto {
+        width: 80%;
+    }
+
+    .about {
+        width: 70%;
+    }
+
+    .mespredef {
+        width: 80%;
+        height: auto;
+        align-items: center; 
+        gap: 30px;
+        padding-top: 5%;
+    }
+
+    .odd {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .even {
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+@media (max-width: 950px) {
+    .fotoOliver {
+        width: 300px;
+    }
+
+    .about {
+        width: 80%;
+    }
+    
+
+    .navigation {
+        gap: 30px;
+    }
+
+    .mespredef {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 650px) {
+    .fotoOliver {
+        width: 280px;
+        transition: 0.7s;
+    }
+
+    .conteudo__texto, .about > h1, h2 {
+        font-size: 3rem;
+    }
+
+    .conteudo__texto, .about > p {
+        font-size: 1.8rem;
+    }
+
+    .about, .mespredef {
+        width: 90%;
+    }
+
+    .rodape {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) and (min-width: 320px) {
+    .about__top {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mespredef {
+        width: auto;
+    }
+}
